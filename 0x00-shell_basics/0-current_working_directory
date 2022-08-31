@@ -1,9 +1,10 @@
-#!/bin/sh
+!/bin/sh
 
-get_current_directory() {
-    0-current_working_directory="${PWD}/${0}"
-    echo "${current_file%/*}"
-}
+ echo "current directory using pwd command"
+ echo $(pwd)
 
-CWD=$(get_current_directory)
-echo "$CWD"
+ echo "current directory using PWD variable"
+ echo $PWD
+
+ echo "previous working directory using OLDPWD variable"
+ echo $OLDPWD
