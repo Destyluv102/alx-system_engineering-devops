@@ -1,2 +1,0 @@
-my shell script
-cool
