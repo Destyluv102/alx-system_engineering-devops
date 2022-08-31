@@ -1,2 +1,9 @@
-#!/bin/bash
-pwd
+#!/bin/sh
+
+get_current_directory() {
+    0-current_working_directory="${PWD}/${0}"
+    echo "${current_file%/*}"
+}
+
+CWD=$(get_current_directory)
+echo "$CWD"
