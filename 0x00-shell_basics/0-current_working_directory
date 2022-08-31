@@ -1,10 +1,2 @@
-!/bin/sh
-
- echo "current directory using pwd command"
- echo $(pwd)
-
- echo "current directory using PWD variable"
+#!/bin/sh
  echo $PWD
-
- echo "previous working directory using OLDPWD variable"
- echo $OLDPWD
